@@ -1,5 +1,6 @@
 import { Bars3Icon } from '@heroicons/react/24/solid';
 import Link from 'next/link';
+import NavLinks from './NavLinks';
 
 const Header = () => {
   return (
@@ -14,11 +15,12 @@ const Header = () => {
         </Link>
         <div className="flex justify-end">
           {/* TODO: Dark button */}
-          <button className="hidden px-4 py-2 text-white rounded-full md:inline bg-slate-900 lg:px-8 lg:py-4 dark:bg-slate-800">
+          <button className="hidden px-4 py-2 text-white rounded-full md:inline bg-slate-900 lg:px-4 lg:py-2 dark:bg-slate-800">
             Subscribe Now
           </button>
         </div>
       </div>
+      <NavLinks />
     </header>
   );
 };
