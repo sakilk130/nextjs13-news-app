@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import { Article as ArticleType } from '../types/News';
+import ReadMoreBtn from './ReadMoreBtn';
 
 type ArticleProps = {
   article: ArticleType;
@@ -28,6 +29,7 @@ const Article: FC<ArticleProps> = ({ article }) => {
             <p>{article.published_at}</p>
           </footer>
         </div>
+        <ReadMoreBtn article={article} />
       </div>
     </article>
   );
