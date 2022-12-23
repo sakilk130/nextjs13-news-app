@@ -11,6 +11,7 @@ const SearchBox = () => {
     if (!search) return;
     router.push(`/search?term=${search}`);
   };
+
   return (
     <form
       className="flex items-center justify-between max-w-6xl px-5 mx-auto"
