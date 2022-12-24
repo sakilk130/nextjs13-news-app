@@ -1,3 +1,4 @@
+import { categories } from '../../../constants';
 import fetchNews from '../../../lib/fetchNews';
 import { NewsResponse } from '../../../types/News';
 import NewsLists from '../../NewsLists';
@@ -22,3 +23,9 @@ const NewsCategoryPage = async ({
 };
 
 export default NewsCategoryPage;
+
+export async function generateStaticParams() {
+  return categories.map((category) => ({
+    category,
+  }));
+}
