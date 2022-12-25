@@ -5,7 +5,7 @@ import NewsLists from './NewsLists';
 
 async function HomePage() {
   const news =
-    process.env.NODE_ENV === 'production'
+    process.env.NODE_ENV === 'development'
       ? data
       : await fetchNews(categories.join(','));
   return (
